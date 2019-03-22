@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/idImagemProdutoEditar"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/idNomeProdutoEditar"
+        android:layout_alignEnd="@+id/idNomeProdutoEditar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NOME DO PRODUTO"
+        android:id="@+id/idNomeProdutoEditar"
+        android:layout_below="@+id/idImagemProdutoEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PREÇO DE VENDA"
+        android:id="@+id/idPrecoVendaEditar"
+        android:layout_below="@+id/idNomeProdutoEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ESTOQUE"
+        android:id="@+id/idQtdEstoqueEditar"
+        android:layout_below="@+id/idPrecoVendaEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDITAR"
+        android:textSize="14dp"
+        android:id="@+id/idBotaoProdutosDialogEditar"
+        android:layout_below="@+id/idQtdEstoqueEditar"
+        android:layout_toLeftOf="@+id/idImagemProdutoEditar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APAGAR"
+        android:textSize="14dp"
+        android:id="@+id/idBotaoProdutosDialogApagar"
+        android:layout_alignBottom="@+id/idBotaoProdutosDialogEditar"
+        android:layout_toRightOf="@+id/idImagemProdutoEditar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPARTILHAR"
+        android:textSize="14dp"
+        android:id="@+id/idBotaoProdutosDialogCompartilhar"
+        android:layout_alignBottom="@+id/idBotaoProdutosDialogApagar"
+        android:layout_toLeftOf="@+id/idBotaoProdutosDialogApagar"
+        android:layout_alignLeft="@+id/idImagemProdutoEditar"
+        android:layout_alignStart="@+id/idImagemProdutoEditar" />
+
+</RelativeLayout>
